@@ -20,26 +20,37 @@ body {
   color: #acb2c6;
 }
 
-.page-header {
+/* NAVIGATION */
+
+#logo {
+  width: 50px;
+  height: 50px;
 }
 
 .navigation {
+  display: flex;
   background-color: #0a1323;
-  padding: 40px;
+  padding: 15px 40px 20px;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .nav-links {
   display: flex;
-  margin: 0 60px;
   justify-content: flex-end;
   list-style-type: none;
 }
 
 .nav-links a {
   margin-right: 30px;
+  padding-bottom: 10px;
   text-decoration: none;
-  font-weight: 600;
+  font-weight: 500;
   color: #acb2c6;
+}
+.nav-links a:hover {
+    border-bottom: 5px solid #59fdd1;
+    transition: 0.2s ease-in-out;
 }
 
 .page-header h1 {
