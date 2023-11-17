@@ -14,7 +14,7 @@
   --blue: #0d1931;
   --grey: #acb2c6;
   --light-purple: #c1cbf4;
-
+  --border-radius: 4px;
   display: grid;
   min-height: 100vh;
   grid-template-rows: 1fr auto;
@@ -58,6 +58,7 @@ h5,
 h6 {
   margin: 0px 0px 10px;
   font-weight: 700;
+  line-height: 1.1;
 }
 
 section {
@@ -65,12 +66,6 @@ section {
   padding: 100px 0px;
   max-width: 1000px;
 }
-
-
-
-
-
-
 
 /* NAVIGATION */
 
@@ -82,8 +77,8 @@ section {
 .navigation {
   display: flex;
   background-color: var(--blue);
-  padding: 20px 40px 20px;
-  margin-right: 30px;
+  padding: 20px 30px 20px;
+  /* margin: 0px 30px 0px; */
   justify-content: space-between;
   align-items: center;
 }
@@ -102,41 +97,78 @@ section {
   font-size: var(--font-size-sm);
   color: var(--light-purple);
 }
+
+
 .nav-links a:hover {
   border-bottom: 5px solid var(--green);
   transition: 0.2s ease-in-out;
 }
 
-
-
-
 /* HEADER  */
+
+header .page-content {
+  margin: 0px auto;
+  width: 100%;
+  max-width: 1600px;
+  min-height: 100vh;
+  padding: 0px 150px;
+}
 
 .intro {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
+  align-items:flex-start;
   min-height: 100vh;
   height: 100vh;
   padding: 0px;
+  /* margin-bottom: 100px; */
 }
-.intro h1{
-    color: var(--green);
-    font-size: var(--font-size-base);
-    font-weight: 400;
-    font-stretch: ultra-expanded;
+
+.main-heading {
+  margin: 0px 0px 20px;
+  font-size: var(--font-size-xxl);
+}
+
+.intro h1 {
+  margin: 0px 0px 30px 4px;
+  color: var(--green);
+  font-size: clamp(var(--fz-sm), 5vw, var(--fz-md));
+  font-weight: 400;
+  font-stretch: ultra-expanded;
 }
 
 .intro h2 {
   color: var(--light-purple);
-  /* font-weight: 700; */
 }
 
+.intro h3 {
+  margin-top: 5px;
+  line-height: 0.9;
+}
 
+.intro p {
+  margin: 20px 0px 0px;
+  max-width: 540px;
+}
 
+.intro a{
+    color: var(--green);
+    background-color: transparent;
+    border: 1px solid var(--green);
+    border-radius: var(--border-radius);
+    padding: 1.25rem 1.75rem;
+    font-size: var(--font-size-base);
+    line-height: 1;
+    text-decoration: none;
+    margin: 50px 0px;
+}
 
-
+.intro a:hover {
+  color: var(--blue);
+  background-color: var(--green);
+  transition:  0.1s ease-in-out;
+}
 
 
 /* MAIN CONTENT */
@@ -151,13 +183,6 @@ section {
 .about img {
   filter: grayscale(100%);
 }
-
-
-
-
-
-
-
 
 /* CONTACTS check the margins*/
 
@@ -177,7 +202,7 @@ section {
   width: 1px;
   height: 80px;
   margin: 0px auto;
-  background-color: var(--green);
+  background-color: var(--light-purple);
 }
 
 .contacts-social,
@@ -187,7 +212,7 @@ section {
   align-items: center;
   justify-content: flex-end;
   width: 30px;
-  margin: 0px;
+  margin: 0px 5px 0px;
   padding: 0px;
   list-style-type: none;
 }
@@ -203,13 +228,14 @@ section {
   width: 20px;
   height: 20px;
   margin-bottom: 10px;
+  stroke: var(--light-purple);
 }
 
 .contacts-social li a svg:hover,
 .contacts-email a:hover {
-  stroke: var(--light-purple);
-  color: var(--light-purple);
-  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+  stroke: var(--green);
+  color: var(--green);
+  transition:  0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
 /* .contacts-email {
@@ -221,7 +247,7 @@ section {
 
 .contacts-email a {
   text-decoration: none;
-  color: var(--green);
+  color: var(--light-purple);
   padding: 0px;
   margin: 10px auto;
   font-size: var(--font-size-sm);
