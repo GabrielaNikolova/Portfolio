@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="static/style.css" />
   </head>
   <body>
-    <div id="layout">
+    <div id="page-layout">
       <header class="page-header" id="home">
         <nav class="navigation">
           <img
@@ -119,7 +119,7 @@
               <!-- <p>Here are a few technologies I have experience with:</p> -->
               <p>Technical skills:</p>
 
-              <ul class="skills">
+              <ul class="skills-list">
                 <li class="skill-item">Java</li>
                 <li class="skill-item">Java Script</li>
                 <li class="skill-item">HTML</li>
@@ -133,15 +133,31 @@
             <img
               class="about-img"
               src="static/images/img_GN.jpg"
-              alt="Image of Gabriela Nikolova"
-              width="200px"
-              height="auto" />
+              alt="Image of Gabriela Nikolova" />
+          </div>
+        </section>
+        <section class="education" id="education">
+          <h2 class="section-title">Education</h2>
+          <div class="section-tab-panel">
+            <div class="school-list" role="tablist">
+              <button class="list-item" id="softuni" role="tab">
+                Software University - Sofia
+              </button>
+              <button class="list-item" id="tum" role="tab">
+                TUM - Munich
+              </button>
+            </div>
+            <div class="panels">
+                <div id="panel-0" role="tabpanel" class="school-panel"></div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil iure atque voluptatem facilis alias obcaecati, inventore voluptas, at, dignissimos vel consectetur quia ab corrupti exercitationem perspiciatis non ea maiores eaque.
+              </p>
+            </div>
           </div>
         </section>
       </main>
 
       <footer class="footer">
-        <!-- <div > -->
         <ul class="contacts-shrinked">
           <li>
             <a class="email" href="mailto:nikolova.gab@gmail.com"
@@ -201,7 +217,6 @@
             ></a>
           </li>
         </ul>
-        <!-- </div> -->
 
         <a href="https://github.com/GabrielaNikolova/Portfolio">
           <div>Based on a design by Brittany Chiang</div>
