@@ -81,7 +81,24 @@ section {
   max-width: 1000px;
 }
 
-/* NAVIGATION */
+.section-title {
+  display: flex;
+  color: var(--light-purple);
+  font-weight: 700;
+}
+
+.section-title::after {
+  position: relative;
+  content: "";
+  display: block;
+  height: 1px;
+  width: 150px;
+  margin: auto 0px;
+  margin-left: 10px;
+  background-color: var(--green);
+}
+
+/* HEADER - NAVIGATION */
 
 /* #logo {
   width: 50px;
@@ -95,6 +112,7 @@ section {
   /* margin: 0px 30px 0px; */
   justify-content: space-between;
   align-items: center;
+  z-index: 10;
 }
 
 .nav-links {
@@ -116,15 +134,16 @@ section {
   transition: 0.2s ease-in-out;
 }
 
-/* HEADER  */
-
-header .page-content {
+/* MAIN CONTENT */
+.page-content {
   margin: 0px auto;
   width: 100%;
   max-width: 1600px;
   min-height: 100vh;
-  padding: 0px 150px;
+  /* padding: 0 150px; */
 }
+
+/* intro  */
 
 .intro {
   display: flex;
@@ -168,7 +187,7 @@ header .page-content {
   color: var(--green);
   background-color: transparent;
   border: 1px solid var(--green);
-  border-radius: var(--border-radius);
+  border-radius: 10px;
   padding: 1.25rem 1.75rem;
   font-size: var(--font-size-base);
   line-height: 1;
@@ -181,17 +200,39 @@ header .page-content {
   transition: 0.1s ease-in-out;
 }
 
-/* MAIN CONTENT */
-.page-content {
-  margin: 0px auto;
-  width: 100%;
-  max-width: 1600px;
-  min-height: 100vh;
-  padding: 0 150px;
+.about {
+  max-width: 900px;
 }
 
-.about img {
-  filter: grayscale(100%);
+.section-paragraph {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+/* check margins */
+.about-img {
+  filter: grayscale(80%);
+  border-radius: 10px;
+  align-self: center;
+  /* margin:  20px  20px auto; */
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: auto;
+  padding: 0px;
+}
+
+.skill-item {
+  color: var(--green);
+  background-color: transparent;
+  border: 1px solid var(--green);
+  border-radius: 10px;
+  padding: 0.7rem;
+  font-size: var(--font-size-sm);
 }
 
 /* CONTACTS check the margins*/
@@ -275,9 +316,9 @@ header .page-content {
   font-size: var(--font-size-sm);
 }
 
-.footer a div{
-    margin-top: 5px;
-    font-stretch: extra-expanded;
+.footer a div {
+  margin-top: 5px;
+  font-stretch: extra-expanded;
 }
 
 .contacts-shrinked {
