@@ -554,9 +554,3 @@ section {
   width: auto;
   margin: auto 10px;
 }
-
-/* .contacts-shrinked svg:hover {
-  stroke: var(--green);
-  color: var(--green);
-  transition: 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
-} */
