@@ -258,15 +258,13 @@ section {
 .skill-item {
   color: var(--green);
   background-color: rgb(80, 255, 199, 0.1);
-  /* background-color: transparent; */
-  /* border: 1px solid var(--green); */
   border-radius: 10px;
   padding: 0.7rem;
   margin: 5px auto;
   font-size: var(--font-size-sm);
 }
 
-/* education and experience - section  */
+/* education and experience - sections  */
 .education,
 .experience {
   max-width: 700px;
@@ -353,17 +351,6 @@ section {
 [role="tabpanel"].is-hidden {
   display: none;
 }
-
-/* tabs switching
-.panel-tab:not(:target) {
-  display: none;
-  visibility: hidden;
-}
-
-.panel-tab:target{
-  display: block;
-  visibility: visible;
-} */
 
 /* CONTACTS check the margins*/
 
