@@ -17,12 +17,12 @@
         <nav class="navigation">
           <img
             id="logo"
-            alt="Gabriela Nikolova logo"
+            alt="Gabriela Nikolova's logo - the letter G"
             src="static/images/logo-g2.png"
             height="60px"
             width="60px" />
           <ul class="nav-links">
-            <li><a href="#home">Home</a></li>
+            <li><a href="/">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#education">Education</a></li>
             <li><a href="#experience">Experience</a></li>
@@ -78,9 +78,8 @@
           </li>
         </ul>
       </div>
-      <!-- changes -->
       <main class="page-content">
-        <section class="intro">
+        <section class="intro" id="home">
           <h1>Hi, my name is</h1>
           <h2 class="main-heading">Gabriela Nikolova.</h2>
           <h3 class="main-heading">I'm a Software Developer</h3>
@@ -136,7 +135,7 @@
               alt="Image of Gabriela Nikolova" />
           </div>
         </section>
-        <section class="education">
+        <section class="education" id="education">
           <h2 class="section-title">Education</h2>
           <div class="section-tab-panel">
             <div class="tab-listn manual" role="tablist">
@@ -227,7 +226,7 @@
             </div>
           </div>
         </section>
-        <section class="experience">
+        <section class="experience" id="experience">
           <h2 class="section-title">Work experience</h2>
           <div class="section-tab-panel">
             <div class="tab-list manual" role="tablist">
@@ -291,6 +290,50 @@
                   </p>
                 </div>
               </div>
+            </div>
+          </div>
+        </section>
+        <section class="projects" id="projects">
+          <h2 class="section-title">Projects</h2>
+          <div class="section-item">
+            <img
+              class="section-img"
+              src="static/images/project-img.png"
+              alt="Image of the Dashboard page of the Family expenses web app" height="auto" width="400px" />
+            <div class="project-item">
+              <h3 class="item-title">Family expenses App</h3>
+              <p class="item-description">
+                A web application for management and visualization of personal
+                expenses. Create an account and keep information about your
+                personal budget, income, savings, and expenses. View a detailed
+                information about monthly costs and create events in your
+                personal calendar.
+              </p>
+              <ul class="technologies-list">
+                <li class="tech-item">Java</li>
+                <li class="tech-item">MySQL</li>
+                <li class="tech-item">Spring</li>
+                <li class="tech-item">Hibernate</li>
+              </ul>
+              <a
+                class="item-url"
+                href="https://github.com/GabrielaNikolova/softuni-family-expenses-app"
+                ><svg
+                  class="icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#59ffd1"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="feather feather-github">
+                  <title>GitHub logo</title>
+                  <path
+                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                </svg>
+              </a>
             </div>
           </div>
         </section>
