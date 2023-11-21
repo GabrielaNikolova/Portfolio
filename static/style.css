@@ -72,6 +72,10 @@ ul {
   list-style-type: none;
 }
 
+input[type="radio"] {
+  display: none;
+}
+
 section {
   margin: 0px auto;
   padding: 100px 0px;
@@ -263,13 +267,13 @@ section {
 }
 
 /* education - section  */
-.education{
-    max-width: 700px;
+.education {
+  max-width: 700px;
 }
 
-.section-tab-panel{
-    display: flex;
-    column-gap: 30px;
+.section-tab-panel {
+  display: flex;
+  column-gap: 30px;
 }
 
 .school-list {
@@ -280,36 +284,75 @@ section {
   width: max-content;
   padding: 0px;
   margin: 0px;
+  list-style: none;
 }
 
 .list-item {
-  text-decoration: none;
   position: relative;
   display: flex;
   align-items: center;
+  text-align: left;
   width: 100%;
   height: 40px;
   padding-left: 15px;
   margin: 0px;
   border: none;
-  border-left: 2px solid var(--grey);
+  border-left: 1px solid var(--grey);
   background-color: transparent;
   color: var(--green);
   font-size: var(--font-size-sm);
-  margin-bottom: 10px;
 }
 
 .list-item:hover{
-    border-left-color: var(--green);
-    background-color: rgb(80, 255, 199, 0.1);
+  border-left-color: var(--green);
+  background-color: rgb(80, 255, 199, 0.1);
 }
 
 .panels {
-    display: flex;
-    /* flex: 1 1 70%; */
-    flex-basis: 70%;
-    flex-direction: column;
-    
+  display: flex;
+  position: relative;
+  /* flex: 1 1 70%; */
+  flex-basis: 70%;
+  flex-direction: column;
+}
+
+.school-tab {
+  width: 100%;
+  height: auto;
+}
+
+.degree-title {
+  margin-bottom: 2px;
+  font-weight: 500;
+  line-height: 1.3;
+  color: var(--light-purple);
+}
+
+.timeframe {
+  font-size: var(--font-size-sm);
+  margin-bottom: 20px;
+}
+
+.modules-list p::before {
+  content: ">";
+  position: absolute;
+  left: 0px;
+  color: var(--green);
+}
+
+.modules-list p {
+  margin-bottom: 10px;
+  padding-left: 20px;
+  font-size: 0.8em;
+}
+
+/* tabs switching */
+.school-tab:not(:target) {
+  display: none;
+}
+
+.school-tab:target{
+  display: block;
 }
 
 /* CONTACTS check the margins*/
