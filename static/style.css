@@ -161,7 +161,7 @@ section {
   margin: 0px auto;
   max-width: 1600px;
   min-height: 100vh;
-  padding: 0 150px;
+  padding: 0 100px 0px 150px;
 }
 
 /* intro section */
@@ -223,9 +223,10 @@ section {
 
 /* about section  */
 
-/* .about {
-  max-width: 900px;
-} */
+.about {
+  /* max-width: 800px; */
+  justify-self: center;
+}
 
 /* .section-paragraph {
   display: flex;
@@ -234,7 +235,7 @@ section {
 } */
 .section-paragraph {
   display: grid;
-  grid-template-columns: 3fr 2fr;
+  grid-template-columns: 4fr 1fr;
   gap: 60px;
 }
 
@@ -242,7 +243,7 @@ section {
   /* filter: grayscale(80%); */
   border-radius: var(--border-radius);
   justify-self: baseline;
-  width: 50%;
+  width: 100%;
   height: auto;
 }
 
@@ -267,7 +268,7 @@ section {
 /* education and experience - sections  */
 .education,
 .experience {
-  max-width: 700px;
+  max-width: 800px;
 }
 
 .section-tab-panel {
@@ -351,6 +352,16 @@ section {
 [role="tabpanel"].is-hidden {
   display: none;
 }
+
+
+/* projects - section  */
+
+
+
+
+
+
+
 
 /* CONTACTS check the margins*/
 
