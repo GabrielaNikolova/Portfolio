@@ -266,8 +266,8 @@ section {
   font-size: var(--font-size-sm);
 }
 
-/* education - section  */
-.education {
+/* education and experience - section  */
+.education, .experience {
   max-width: 700px;
 }
 
@@ -276,7 +276,7 @@ section {
   column-gap: 30px;
 }
 
-.school-list {
+.tab-list {
   display: flex;
   /* flex: 1 1 30%; */
   flex-basis: 30%;
@@ -316,12 +316,12 @@ section {
   flex-direction: column;
 }
 
-.school-tab {
+.panel-tab {
   width: 100%;
   height: auto;
 }
 
-.degree-title {
+.panel-title {
   margin-bottom: 2px;
   font-weight: 500;
   line-height: 1.3;
@@ -333,25 +333,25 @@ section {
   margin-bottom: 20px;
 }
 
-.modules-list p::before {
+.panel-tab-list p::before {
   content: ">";
   position: absolute;
   left: 0px;
   color: var(--green);
 }
 
-.modules-list p {
+.panel-tab-list p {
   margin-bottom: 10px;
   padding-left: 20px;
   font-size: 0.8em;
 }
 
 /* tabs switching */
-.school-tab:not(:target) {
+.panel-tab:not(:target) {
   display: none;
 }
 
-.school-tab:target{
+.panel-tab:target{
   display: block;
 }
 
