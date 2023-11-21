@@ -267,7 +267,8 @@ section {
 }
 
 /* education and experience - section  */
-.education, .experience {
+.education,
+.experience {
   max-width: 700px;
 }
 
@@ -287,7 +288,8 @@ section {
   list-style: none;
 }
 
-.list-item {
+.list-item,
+[role="tab"][aria-selected="false"] {
   position: relative;
   display: flex;
   align-items: center;
@@ -303,7 +305,9 @@ section {
   font-size: var(--font-size-sm);
 }
 
-.list-item:hover{
+.list-item:hover,
+[role="tab"]:focus,
+[role="tab"][aria-selected="true"] {
   border-left-color: var(--green);
   background-color: rgb(80, 255, 199, 0.1);
 }
@@ -346,14 +350,20 @@ section {
   font-size: 0.8em;
 }
 
-/* tabs switching */
+[role="tabpanel"].is-hidden {
+  display: none;
+}
+
+/* tabs switching
 .panel-tab:not(:target) {
   display: none;
+  visibility: hidden;
 }
 
 .panel-tab:target{
   display: block;
-}
+  visibility: visible;
+} */
 
 /* CONTACTS check the margins*/
 

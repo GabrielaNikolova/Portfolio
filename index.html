@@ -78,7 +78,7 @@
           </li>
         </ul>
       </div>
-
+      <!-- changes -->
       <main class="page-content">
         <section class="intro">
           <h1>Hi, my name is</h1>
@@ -139,16 +139,33 @@
         <section class="education">
           <h2 class="section-title">Education</h2>
           <div class="section-tab-panel">
-            <div class="tab-list" role="tablist">
-              <a tabindex="1" class="list-item" href="#panel-1">
+            <div class="tab-listn manual" role="tablist">
+              <button
+                id="tab-0"
+                role="tab"
+                aria-selected="true"
+                aria-controls="panel-0"
+                class="list-item">
                 Software University - Sofia
-              </a>
-              <a tabindex="1" class="list-item" href="#panel-2">
+              </button>
+              <button
+                id="tab-1"
+                role="tab"
+                tabindex="-1"
+                aria-selected="false"
+                aria-controls="panel-1"
+                class="list-item">
                 Technical University of Munich
-              </a>
+              </button>
             </div>
             <div class="panels">
-              <div id="panel-1" class="panel-tab">
+              <div
+                id="panel-0"
+                role="tabpanel"
+                tabindex="0"
+                aria-labelledby="tab-0"
+                aria-hidden="false"
+                class="panel-tab">
                 <h3 class="panel-title">Java Web Developer</h3>
                 <p class="timeframe">September 2019 - May 2023</p>
                 <div class="panel-tab-list">
@@ -182,7 +199,13 @@
                   </p>
                 </div>
               </div>
-              <div id="panel-2" class="panel-tab">
+              <div
+                id="panel-1"
+                role="tabpanel"
+                tabindex="-1"
+                aria-labelledby="tab-1"
+                aria-hidden="true"
+                class="panel-tab is-hidden">
                 <h3 class="panel-title">
                   Sustainable Resource Management M.Sc.
                 </h3>
@@ -207,16 +230,33 @@
         <section class="experience">
           <h2 class="section-title">Work experience</h2>
           <div class="section-tab-panel">
-            <div class="tab-list" role="tablist">
-              <a tabindex="1" class="list-item" href="#panel-3">
+            <div class="tab-list manual" role="tablist">
+              <button
+                id="tab-2"
+                role="tab"
+                aria-selected="true"
+                aria-controls="panel-2"
+                class="list-item">
                 Junior Technical Operations Specialist
-              </a>
-              <a tabindex="1" class="list-item" href="#panel-4">
+              </button>
+              <button
+                id="tab-3"
+                role="tab"
+                tabindex="-1"
+                aria-selected="false"
+                aria-controls="panel-3"
+                class="list-item">
                 Data Analyst
-              </a>
+              </button>
             </div>
             <div class="panels">
-              <div id="panel-3" class="panel-tab">
+              <div
+                id="panel-2"
+                role="tabpanel"
+                tabindex="0"
+                aria-labelledby="tab-2"
+                aria-hidden="false"
+                class="panel-tab">
                 <h3 class="panel-title">
                   Junior Technical Operations Specialist at Experteer GmbH
                 </h3>
@@ -230,7 +270,13 @@
                   </p>
                 </div>
               </div>
-              <div id="panel-4" class="panel-tab">
+              <div
+                id="panel-3"
+                role="tabpanel"
+                tabindex="-1"
+                aria-labelledby="tab-3"
+                aria-hidden="true"
+                class="panel-tab is-hidden">
                 <h3 class="panel-title">Data Analyst at Experteer GmbH</h3>
                 <p class="timeframe">January 2013 - September 2017</p>
                 <div class="panel-tab-list">
@@ -317,5 +363,6 @@
         </a>
       </footer>
     </div>
+    <script src="static/js/tabs-manual.js"></script>
   </body>
 </html>
