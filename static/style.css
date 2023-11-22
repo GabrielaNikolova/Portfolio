@@ -736,7 +736,7 @@ section {
     margin-bottom: 2rem;
     justify-content: center;
     align-items: center;
-    max-width: 100%
+    max-width: 100%;
   }
 
   .list-item,
@@ -776,7 +776,6 @@ section {
     justify-content: center;
     text-align: left;
   }
-
 
   .section-img {
     order: 2;
