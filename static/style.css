@@ -122,7 +122,7 @@ section {
 #logo {
   position: relative;
   width: auto;
-  height: 60px;
+  height: 6rem;
 }
 
 .page-header {
@@ -134,23 +134,22 @@ section {
   width: calc(100% - 100px);
   height: var(--nav-heigth);
   background-color: var(--blue);
-  padding: 0px 7rem 0px 5rem;
+  padding: 0px 5rem 0px 5rem;
 }
 
-.menu-button{
+.menu-button {
   font-family: "Raleway";
 }
 
 .menu-button-container {
   display: none;
   height: 100%;
-  width: 3rem;
+  width: 5rem;
   cursor: pointer;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-
 
 #menu-toggle {
   display: none;
@@ -162,19 +161,19 @@ section {
   display: block;
   background-color: var(--green);
   position: absolute;
-  height: 0.4rem;
+  height: 0.5rem;
   width: 3rem;
   transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
   border-radius: 0.2rem;
 }
 
 .menu-button::before {
-  content: '';
+  content: "";
   margin-top: -8px;
 }
 
 .menu-button::after {
-  content: '';
+  content: "";
   margin-top: 8px;
 }
 
@@ -184,19 +183,13 @@ section {
 }
 
 #menu-toggle:checked + .menu-button-container .menu-button {
-  background-color: rgb(80, 255, 199, 0.1);
+  background-color: rgb(80, 255, 199, 0.05);
 }
 
 #menu-toggle:checked + .menu-button-container .menu-button::after {
   margin-top: 0px;
   transform: rotate(-405deg);
 }
-
-
-
-
-
-
 
 .navigation {
   display: flex;
@@ -209,7 +202,6 @@ section {
 
 .nav-links {
   display: flex;
-  /* justify-content: flex-end; */
   justify-content: space-between;
   align-items: center;
   padding: 0px;
@@ -247,7 +239,6 @@ section {
   min-height: 100vh;
   height: 100vh;
   padding: 0px;
-  /* margin-bottom: 100px; */
 }
 
 .main-heading {
@@ -256,7 +247,7 @@ section {
 }
 
 .intro h1 {
-  margin: 0px 0px 30px 4px;
+  margin: 0px 0px 3rem 0.4rem;
   color: var(--green);
   font-size: clamp(var(--fz-sm), 5vw, var(--fz-md));
   font-weight: 400;
@@ -273,7 +264,7 @@ section {
 }
 
 .intro p {
-  margin: 20px 0px 0px;
+  margin: 2rem 0px 0px;
   max-width: 540px;
 }
 
@@ -297,7 +288,6 @@ section {
 /* about section  */
 
 .about {
-  /* max-width: 800px; */
   justify-self: center;
 }
 
@@ -528,12 +518,6 @@ section {
   font-size: var(--font-size-sm);
 }
 
-/* .item-url {
-  display: flex;
-  position: relative;
-  justify-content: right;
-} */
-
 /* CONTACTS check the margins*/
 
 .contacts {
@@ -575,8 +559,7 @@ section {
 
 .contacts-social li a svg,
 .item-url svg {
-  /* margin-bottom: 10px; */
-  padding: 10px;
+  padding: 1rem;
   stroke: var(--light-purple);
 }
 
@@ -590,7 +573,7 @@ section {
 .contacts-email a {
   color: var(--light-purple);
   padding: 0px;
-  margin: 10px auto;
+  margin: 1rem auto;
   font-size: var(--font-size-sm);
   writing-mode: vertical-lr;
   letter-spacing: 0.2em;
@@ -661,6 +644,7 @@ section {
   .contacts {
     display: none;
   }
+
   .contacts-shrinked {
     display: flex;
   }
@@ -697,58 +681,46 @@ section {
     margin-left: 0.5rem;
   }
 
-
-
-
-
-
   .menu-button-container {
     display: flex;
   }
 
-
   .menu {
     position: absolute;
     top: 0;
-    margin-top: 5rem;
-    left: 0;
+    margin-top: 6rem;
+    /* left: 0; */
     flex-direction: column;
     width: 100%;
     justify-content: center;
     align-items: center;
   }
+
   #menu-toggle ~ .menu li {
     height: 0;
     margin: 0;
     padding: 0;
     border: 0;
-    transition: height 100ms cubic-bezier(0.23, 1, 0.32, 1);
+    transition: height 30ms cubic-bezier(0.23, 1, 0.32, 1);
     visibility: hidden;
-    
   }
-  
+
   #menu-toggle:checked ~ .menu li {
     height: 2.5em;
     padding: 0.5em;
     transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
     visibility: visible;
   }
+
   .menu > li {
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 0;
-    /* padding: 0.5rem 0; */
     width: 100%;
     color: var(--light-purple);
     background-color: var(--ligth-navy);
   }
-  /* .menu > li:not(:last-child) {
-    border-bottom: 1px solid #444;
-  } */
-
-
-
 }
 
 @media screen and (max-width: 650px) {
@@ -763,24 +735,23 @@ section {
     flex-direction: row;
     margin-bottom: 2rem;
     justify-content: center;
-    overflow-x:auto;
-    /* width: calc(100% + 100px); */
-    scroll-behavior: smooth;
+    align-items: center;
+    max-width: 100%
   }
 
   .list-item,
   [role="tab"][aria-selected="false"] {
     border-bottom: 1px solid var(--grey);
     border-left: none;
-    justify-content: center;
-    text-align: center;
-    padding: 0px;
+    padding: auto;
     font-size: 0.7em;
+    text-align: center;
   }
 
   .list-item:hover,
   [role="tab"]:focus,
   [role="tab"][aria-selected="true"] {
+    text-align: center;
     border-left-color: transparent;
     border-bottom-color: var(--green);
     background-color: rgb(17, 37, 64, 0.4);
@@ -795,17 +766,21 @@ section {
   }
 
   .section-item {
-    display: block;
+    display: flex;
+    flex-direction: column;
   }
 
   .item-title,
   .item-description {
     display: flex;
     justify-content: center;
+    text-align: left;
   }
 
+
   .section-img {
-    display: none;
+    order: 2;
+    /* display: none; */
   }
 }
 
