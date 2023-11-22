@@ -27,8 +27,8 @@
 
 body {
   margin: 0px;
-  width: 100%;
-  min-height: 100vh;
+  /* width: 100%;
+  min-height: 100vh; */
   overflow-x: hidden;
   scroll-behavior: smooth;
   background-color: var(--blue);
@@ -36,6 +36,13 @@ body {
   font-size: var(--font-size-base);
   line-height: 1.3;
   -webkit-font-smoothing: antialiased;
+}
+
+#page-layout{
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: 1fr auto;
+  grid-template-columns: 100%;
 }
 
 img,
@@ -88,7 +95,7 @@ section {
   display: flex;
   color: var(--light-purple);
   font-weight: 700;
-  margin: 0px 0px 40px;
+  margin: 0px 0px 4rem;
 }
 
 .section-title::after {
@@ -98,7 +105,7 @@ section {
   height: 1px;
   width: 150px;
   margin: auto 0px;
-  margin-left: 10px;
+  margin-left: 1rem;
   background-color: var(--green);
 }
 
@@ -131,7 +138,7 @@ section {
   width: calc(100% - 100px);
   height: var(--nav-heigth);
   background-color: var(--blue);
-  padding: 0px 70px 0px 50px;
+  padding: 0px 7rem 0px 5rem;
 }
 
 .navigation {
@@ -245,23 +252,24 @@ section {
 .section-paragraph {
   display: grid;
   position: relative;
-  /* grid-template-columns: 4fr 1fr; */
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  grid-auto-rows: auto;
+  grid-template-columns: 3fr 2fr;
+  /* grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); */
+  /* grid-auto-rows: auto; */
   gap: 3em;
 }
 .text {
-  grid-area: 1 / 1/ -1/ 4;
+  /* grid-area: 1 / 1/ -1/ 4; */
   z-index: 2;
 }
 .about-img {
-  grid-area: 1 / 4/ -1/ -1;
+  /* grid-area: 1 / 4/ -1/ -1; */
   /* filter: grayscale(80%); */
   position: relative;
   border-radius: var(--border-radius);
   justify-self: baseline;
   width: 50%;
-  min-width: 100px;
+  /* min-width: 100px; */
+  max-width: 200px;
   height: auto;
 }
 
@@ -573,12 +581,35 @@ section {
   margin: auto 1rem;
 }
 
+@media screen and (max-width: 1250px){
+
+
+}
 
 @media screen and (max-width: 768px){
+  .page-content{
+    display: block;
+    margin: 0px;
+    padding: 0px 5rem 0px 5rem;
+    /* padding: 0px;
+    margin: auto 3rem; */
+  }
+  
   .contacts{
     display: none;
   }
   .contacts-shrinked{
     display: flex;
   }
+
+  .section-paragraph{
+    display: block;
+  }
+}
+
+@media screen and (max-width: 350px){
+  .section-title::after{
+    display: none;
+  }
+
 }
