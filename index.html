@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio page of Gabriela Nikolova</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;600;700;800;900&display=swap">
-    <link rel="stylesheet" href="static/style.css">
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;600;700;800;900&display=swap" />
+    <link rel="stylesheet" href="static/style.css" />
   </head>
   <body>
     <div id="page-layout">
@@ -19,14 +19,18 @@
             <img
               id="logo"
               alt="Gabriela Nikolova's logo - the letter G"
-              src="static/images/logo-g2.png">
+              src="static/images/logo-g2.png" />
           </div>
+          <input
+            id="menu-toggle"
+            type="checkbox"
+            aria-labelledby="menu-toggle"
+            title="Hidden toggle navigation menu that shows when pressing the hamburger menu button" />
           <label class="menu-button-container" for="menu-toggle">
             <span class="menu-button"></span>
           </label>
-          <input id="menu-toggle" type="checkbox" aria-labelledby="menu-toggle"  title="Hidden toggle navigation menu that shows when pressing the hamburger menu button">
           <ul class="nav-links menu">
-            <li><a href="/Portfolio">Home</a></li>
+            <li><a href="#">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#education">Education</a></li>
             <li><a href="#experience">Experience</a></li>
@@ -93,7 +97,7 @@
           <a
             href="static/Gabriela-Nikolova-Resume.pdf"
             title="Link to the pdf file of Gabriela Nikolova's resume"
-            >Resume</a
+            >My Resume</a
           >
         </section>
         <section class="about" id="about">
@@ -137,31 +141,35 @@
             <img
               class="about-image"
               src="static/images/img-GN.jpg"
-              alt="Portrait image of Gabriela Nikolova">
+              alt="Portrait image of Gabriela Nikolova" />
           </div>
         </section>
         <section class="education" id="education">
           <h2 class="section-title">Education</h2>
           <div class="section-tab-panel">
-            <div class="tab-list manual" role="tablist">
-              <button
-                id="tab-0"
-                role="tab"
-                aria-selected="true"
-                aria-controls="panel-0"
-                class="list-item">
-                Software University - Sofia
-              </button>
-              <button
-                id="tab-1"
-                role="tab"
-                tabindex="-1"
-                aria-selected="false"
-                aria-controls="panel-1"
-                class="list-item">
-                Technical University of Munich
-              </button>
-            </div>
+            <ul class="tab-list manual" role="tablist">
+              <li>
+                <button
+                  id="tab-0"
+                  role="tab"
+                  aria-selected="true"
+                  aria-controls="panel-0"
+                  class="list-item">
+                  Software University - Sofia
+                </button>
+              </li>
+              <li>
+                <button
+                  id="tab-1"
+                  role="tab"
+                  tabindex="-1"
+                  aria-selected="false"
+                  aria-controls="panel-1"
+                  class="list-item">
+                  Technical University of Munich
+                </button>
+              </li>
+            </ul>
             <div class="panels">
               <div
                 id="panel-0"
@@ -172,7 +180,7 @@
                 class="panel-tab">
                 <h3 class="panel-title">Java Web Developer</h3>
                 <p class="timeframe">September 2019 - May 2023</p>
-                <div class="panel-tab-list">
+                <div class="panel-tabs">
                   <p>
                     Java Advanced and OOP - Working with linear,
                     multidimensional, and associative data structures.
@@ -214,7 +222,7 @@
                   Sustainable Resource Management M.Sc.
                 </h3>
                 <p class="timeframe">September 2013 - August 2017</p>
-                <div class="panel-tab-list">
+                <div class="panel-tabs">
                   <p>
                     Assessment of the impact of human activities on natural
                     resources and development of sustainable strategies for
@@ -234,25 +242,29 @@
         <section class="experience" id="experience">
           <h2 class="section-title">Work experience</h2>
           <div class="section-tab-panel">
-            <div class="tab-list manual" role="tablist">
-              <button
-                id="tab-2"
-                role="tab"
-                aria-selected="true"
-                aria-controls="panel-2"
-                class="list-item">
-                Junior Technical Operations Specialist
-              </button>
-              <button
-                id="tab-3"
-                role="tab"
-                tabindex="-1"
-                aria-selected="false"
-                aria-controls="panel-3"
-                class="list-item">
-                Data Analyst
-              </button>
-            </div>
+            <ul class="tab-list manual" role="tablist">
+              <li>
+                <button
+                  id="tab-2"
+                  role="tab"
+                  aria-selected="true"
+                  aria-controls="panel-2"
+                  class="list-item">
+                  Junior Technical Operations Specialist
+                </button>
+              </li>
+              <li>
+                <button
+                  id="tab-3"
+                  role="tab"
+                  tabindex="-1"
+                  aria-selected="false"
+                  aria-controls="panel-3"
+                  class="list-item">
+                  Data Analyst
+                </button>
+              </li>
+            </ul>
             <div class="panels">
               <div
                 id="panel-2"
@@ -265,7 +277,7 @@
                   Junior Technical Operations Specialist at Experteer GmbH
                 </h3>
                 <p class="timeframe">October 2017 - August 2018</p>
-                <div class="panel-tab-list">
+                <div class="panel-tabs">
                   <p>Optimization of company's web crawling technology</p>
                   <p>Manual QA testing of the internal data management tools</p>
                   <p>
@@ -283,7 +295,7 @@
                 class="panel-tab is-hidden">
                 <h3 class="panel-title">Data Analyst at Experteer GmbH</h3>
                 <p class="timeframe">January 2013 - September 2017</p>
-                <div class="panel-tab-list">
+                <div class="panel-tabs">
                   <p>
                     Working on data aggregation and quality assurance for the
                     English-speaking job markets
@@ -304,7 +316,7 @@
             <img
               class="section-img"
               src="static/images/project-2.PNG"
-              alt="Image showing the user's Dashboard page in the Family expenses web app">
+              alt="Image showing the user's Dashboard page in the Family expenses web app" />
             <div class="project-item">
               <h3 class="item-title">Family expenses App</h3>
               <p class="item-description">
@@ -361,9 +373,9 @@
                   data-name="mail email e-mail letter"
                   id="mail_email_e-mail_letter">
                   <path
-                    d="M28,13a1,1,0,0,0-1,1v8a1,1,0,0,1-1,1H6a1,1,0,0,1-1-1V14a1,1,0,0,0-2,0v8a3,3,0,0,0,.88,2.12A3,3,0,0,0,6,25H26a3,3,0,0,0,2.12-.88A3,3,0,0,0,29,22V14A1,1,0,0,0,28,13Z"/>
+                    d="M28,13a1,1,0,0,0-1,1v8a1,1,0,0,1-1,1H6a1,1,0,0,1-1-1V14a1,1,0,0,0-2,0v8a3,3,0,0,0,.88,2.12A3,3,0,0,0,6,25H26a3,3,0,0,0,2.12-.88A3,3,0,0,0,29,22V14A1,1,0,0,0,28,13Z" />
                   <path
-                    d="M15.4,18.8a1,1,0,0,0,1.2,0L28.41,9.94a1,1,0,0,0,.3-1.23,3.06,3.06,0,0,0-.59-.83A3,3,0,0,0,26,7H6a3,3,0,0,0-2.12.88,3.06,3.06,0,0,0-.59.83,1,1,0,0,0,.3,1.23ZM6,9H26a.9.9,0,0,1,.28,0L16,16.75,5.72,9A.9.9,0,0,1,6,9Z"/>
+                    d="M15.4,18.8a1,1,0,0,0,1.2,0L28.41,9.94a1,1,0,0,0,.3-1.23,3.06,3.06,0,0,0-.59-.83A3,3,0,0,0,26,7H6a3,3,0,0,0-2.12.88,3.06,3.06,0,0,0-.59.83,1,1,0,0,0,.3,1.23ZM6,9H26a.9.9,0,0,1,.28,0L16,16.75,5.72,9A.9.9,0,0,1,6,9Z" />
                 </g></svg
             ></a>
           </li>
@@ -406,9 +418,10 @@
           </li>
         </ul>
 
-        <a href="https://github.com/GabrielaNikolova/Portfolio">
-          <div>Based on a design by Brittany Chiang</div>
-          <div>Built by Gabriela Nikolova</div>
+        <a href="https://brittanychiang.com/">
+          Based on a design by Brittany Chiang </a
+        ><a href="https://github.com/GabrielaNikolova/Portfolio">
+          Built by Gabriela Nikolova
         </a>
       </footer>
     </div>
