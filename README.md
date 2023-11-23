@@ -9,13 +9,13 @@
 
 <h2>Project Screenshots:</h2>
 
-<img src="static/readme-screenshots/intro-section.png" alt="project-screenshot" width="1905" height="1114/">
+<img src="static/readme-screenshots/intro-section.png" alt="project-screenshot" style="max-width: 100%;">
 
-<img src="static/readme-screenshots/about-me-section.png" alt="project-screenshot" width="1905" height="1114/">
+<img src="static/readme-screenshots/about-me-section.png" alt="project-screenshot" style="max-width: 100%;">
 
-<img src="static/readme-screenshots/work-and-education-sections.png" alt="project-screenshot" width="1905" height="1114/">
+<img src="static/readme-screenshots/work-and-education-sections.png" alt="project-screenshot" style="max-width: 100%;">
 
-<img src="static/readme-screenshots/projects-section.png" alt="project-screenshot" width="1905" height="689/">
+<img src="static/readme-screenshots/projects-section.png" alt="project-screenshot" style="max-width: 100%;">
 
 <h2>Features</h2>
 
