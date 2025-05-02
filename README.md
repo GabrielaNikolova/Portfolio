@@ -1,7 +1,7 @@
 <h1 align="center" id="title">Portfolio page</h1>
 
 <p id="description">Portfolio webpage built with HTML, CSS and JS.</p>
-<p>This was a webpage built to practice my technical skills web design skills.</p>
+<p>This webpage was built to practice my technical web design skills.</p>
 
 <h2>Demo</h2>
 
@@ -19,7 +19,7 @@
 
 <h2>Features</h2>
 
-Here're some of the project's best features:
+Here are some of the project's best features:
 
 - Intuitive navigation
 - Hamburger menu
@@ -39,4 +39,4 @@ Technologies used in the project:
 
 <h2>Credits</h2>
 
-This webpage was based on the design of Brittany Chiang. https://v4.brittanychiang.com/
+This webpage was based on a design by Brittany Chiang. https://v4.brittanychiang.com/
